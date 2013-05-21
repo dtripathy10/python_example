@@ -19,7 +19,7 @@ from urllib2 import urlopen
 import json
 
 
-proxy = urllib2.ProxyHandler({'http': 'http://debabratatripathy:debu!linux@netmon.iitb.ac.in:80'})
+proxy = urllib2.ProxyHandler({'http': 'http://username:password@proxyserver:80'})
 auth = urllib2.HTTPBasicAuthHandler()
 opener = urllib2.build_opener(proxy, auth, urllib2.HTTPHandler)
 urllib2.install_opener(opener)
